@@ -6,7 +6,7 @@
 /*   By: kayamaza <kayamaza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 20:03:20 by kayamaza          #+#    #+#             */
-/*   Updated: 2024/07/25 21:49:38 by kayamaza         ###   ########.fr       */
+/*   Updated: 2024/07/30 21:27:06 by kayamaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
-int	ft_putstr(char *s);
 int	ft_putnbr(long n);
 int	ft_putnbr_unsigned(unsigned long n);
 int	ft_putnbr_hex(unsigned long n, int uppercase);

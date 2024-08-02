@@ -6,13 +6,13 @@
 /*   By: kayamaza <kayamaza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 20:02:29 by kayamaza          #+#    #+#             */
-/*   Updated: 2024/07/25 21:39:12 by kayamaza         ###   ########.fr       */
+/*   Updated: 2024/08/02 15:35:52 by kayamaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int handle_percent(void)
+int	handle_percent(void)
 {
-    return (write(1, '%', 1));
+	return (write(1, "%", 1));
 }

@@ -6,7 +6,7 @@
 #    By: kayamaza <kayamaza@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/25 20:03:43 by kayamaza          #+#    #+#              #
-#    Updated: 2024/07/25 21:38:53 by kayamaza         ###   ########.fr        #
+#    Updated: 2024/07/30 21:27:11 by kayamaza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRCS = ft_printf.c \
        ft_printf_percent.c
 
 OBJS = $(SRCS:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
