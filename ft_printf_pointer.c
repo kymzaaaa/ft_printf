@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_pointer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kayamaza <kayamaza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: steve <steve@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 20:01:18 by kayamaza          #+#    #+#             */
-/*   Updated: 2024/08/02 15:39:02 by kayamaza         ###   ########.fr       */
+/*   Updated: 2024/08/31 09:58:13 by steve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	handle_pointer(va_list args)
 	char				buffer[16];
 
 	addr = (unsigned long long)va_arg(args, void *);
-	len = write(1, "0x", 2);
 	if (addr == 0)
-		return (len + write(1, "0", 1));
+		return (len + write(1, "(nil)", 5));
+	len = write(1, "0x", 2);
 	i = 0;
 	while (addr)
 	{
